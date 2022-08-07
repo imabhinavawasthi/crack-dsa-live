@@ -21,6 +21,7 @@ import Contact from "./Pages/ContactPage/Contact";
 import E404 from "./components/misc/E404";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import Profile from "./Pages/ProfilePage/Profile";
+import CourseMainPage from "./Pages/CourseMainPage/CourseMainPage";
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -91,6 +92,7 @@ const App = () => {
               path="/error404"
               element={<E404 userdata={user[0]} />}
             />
+            <Route exact path="/course/:coursename" element={<CourseMainPage userdata={user[0]} />} />
             <Route path="*" element={<Navigate replace to="/error404" />} />
           </Routes>
         ) : (
@@ -109,6 +111,8 @@ const App = () => {
             />
             <Route exact path="/error404" element={<E404 />} />
             <Route exact path="/login/forgotpassword" element={<ForgotPassword />} />
+            <Route exact path="/course/:coursename" element={<CourseMainPage/>} />
+
             <Route path="*" element={<Navigate replace to="/error404" />} />
           </Routes>
         )}

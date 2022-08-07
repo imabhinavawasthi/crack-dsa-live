@@ -43,21 +43,21 @@ const CoursesHeader = (props) => {
                 </div>
                 <div className='row'>
                     <div className='col-lg-6 col-md-12 article-css-card'>
-                        <Article imgUrl={courseimg1} date="Data Structures & Algorithms" title="Learn Data Structures & Algorithms from Scratch" link="/courses" />
+                        <Article imgUrl={courseimg1} date="Data Structures & Algorithms" title="Learn Data Structures & Algorithms from Scratch" link="/course/dsa" />
 
                     </div>
                     <div className='col-lg-6 col-md-12'>
-                        <Article imgUrl={courseimg1} date="Competitive Programming" title="Master Competitive Programming Concepts" link="/courses" />
+                        <Article imgUrl={courseimg1} date="Competitive Programming" title="Master Competitive Programming Concepts" link="/course/cp" />
 
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col-lg-6 col-md-12 article-css-card'>
-                        <Article imgUrl={courseimg1} date="Course of Action" title="Topicwise Guidance Videos" link="/courses" />
+                        <Article imgUrl={courseimg1} date="Course of Action" title="Topicwise Guidance Videos" link="/course/guidance" />
 
                     </div>
                     <div className='col-lg-6 col-md-12'>
-                        <Article imgUrl={courseimg1} date="Methodology to Learn" title="Structured Roadmaps and Strategies" link="/courses" />
+                        <Article imgUrl={courseimg1} date="Methodology to Learn" title="Structured Roadmaps and Strategies" link="/course/roadmap" />
 
                     </div>
                 </div>
