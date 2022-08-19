@@ -27,7 +27,6 @@ const App = () => {
   const [user, setUser] = useState("");
   function GetCurrentUser() {
     useEffect(() => {
-      document.title = "crackDSA | Competitive Programming"
       auth.onAuthStateChanged((userlogged) => {
         if (userlogged) {
           const getUser = async () => {
