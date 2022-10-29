@@ -4,11 +4,11 @@ import './cta.css';
 const CTA = () => (
     <div className="gpt3__cta">
         <div className="gpt3__cta-content">
-            <p>Request Early Access to Get Started</p>
-            <h3>Register today & start learning in the right direction.</h3>
+            <p>notes.crackDSA.com</p>
+            <h3>Make DSA notes, Save problems & Revise concepts with your own dashboard!</h3>
         </div> 
         <div className="gpt3__cta-btn">
-            <button type="button">Start a Course</button>
+            <a href="https://notes.crackdsa.com/" target="_blank"><button type="button">Visit Now!</button></a>
         </div>
     </div>
 );

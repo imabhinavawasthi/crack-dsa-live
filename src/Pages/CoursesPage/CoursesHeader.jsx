@@ -17,7 +17,7 @@ const CoursesHeader = (props) => {
             <div className="gpt3__header section__padding" id="home">
                 <div className="gpt3__header-content">
                     <h1 className="gradient__text">
-                        Courses Page
+                        Courses
                     </h1>
                     <p>
                         We have organised the best content for you with proper guidance and
@@ -61,7 +61,7 @@ const CoursesHeader = (props) => {
 
                     </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     <TabsApp tabs={[
                         {
                             id: 1,
@@ -88,7 +88,7 @@ const CoursesHeader = (props) => {
                             content: 'Contenido de tab 4.'
                         }
                     ]} />
-                </div>
+                </div> */}
             </div>
         </div>
     );

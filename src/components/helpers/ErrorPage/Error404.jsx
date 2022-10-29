@@ -1,16 +1,26 @@
 import React from 'react'
-import './E404.css'
-import Navbar from "../navbar/Navbar"
-import { NavLink } from "react-router-dom";
-import { Footer } from '../../containers';
+import { NavLink } from 'react-router-dom'
+import "./error.css"
+import Footer from '../../Footer/Footer.jsx'
+import { items } from "../../../Containers/SidebarP/ItemsList.js"
+import { Sidebar } from "react-responsive-sidebar";
 
-const E404 = (props) => {
-  const curruser=props.userdata;
+const Error404 = () => {
+  document.title="Page Not Found! crackDSA.com"
   return (
-    
     <div>
-    <Navbar userdata={curruser}/>
-    <div className='error-page-css'>
+      <Sidebar
+        className="side-bar"
+        content={items}
+        width={220}
+        background={"#FFF"}
+        toggleIconColor={"#209dbb"}
+        color={"#000000"}
+        activeHightlight={"#FFF"}
+        hoverHighlight={"#FFF"}
+        textAlign={"center"}
+      >
+        <div className='error-page-css'>
           <div>
             <svg className='svg-color-css' width="1123" height="837" viewBox="0 0 1123 837" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="1123" height="837" fill="white" />
@@ -107,9 +117,14 @@ const E404 = (props) => {
             <h3>Page Not Found - lets take you <NavLink className="a-error-css" to="/" >BACK</NavLink></h3>
           </div>
         </div>
-    <Footer/>
+        <div className='mt-5'>
+          <Footer />
+        </div>
+      </Sidebar>
+
+
     </div>
   )
 }
 
-export default E404
+export default Error404

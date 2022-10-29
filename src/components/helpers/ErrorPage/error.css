@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
 .error-page-css{
     height: 95vh;
-    /* background: white; */
+    background: white;
     text-align: center;
     color: #E0E0E0;
     font-family: 'Fira Mono', monospace;
-    /* color: var(--theme-color); */
+    color: var(--theme-color);
 }
 .h1-error-css{
     font-size: 2.5rem;
